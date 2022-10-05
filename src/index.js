@@ -11,9 +11,7 @@ import {
 import App from './routes/App'
 
 ReactDOM.createRoot(document.getElementById('app')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+      <App />
 )
 
 // import React from 'react'

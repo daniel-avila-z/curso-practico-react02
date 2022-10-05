@@ -1,6 +1,6 @@
 import React,{ useContext } from 'react';
 import '@styles/OrderItem.scss';
-import {bike} from '@images/bike';
+// import {bike} from '@images/bike';
 import close from '@icons/icon_close.png';
 import AppContext from '@context/AppContext'
 

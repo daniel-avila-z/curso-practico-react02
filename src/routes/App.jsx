@@ -23,22 +23,30 @@ const App = () => { // creamos el element
   const initialState = useInitialState()
 
   // eslint-disable-next-line no-unused-vars
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <>
-        <Route path='/' element={<Home />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/password-recovery' element={<PasswordRecovery />} />
-      </>
-    )
-  )
+  // const router = createBrowserRouter(
+  //   createRoutesFromElements(
+  //     <>
+  //       <Route basename="/curso-practico-react02" path='/' element={<Home />} />
+  //       <Route path='/login' element={<Login />} />
+  //       <Route path='/password-recovery' element={<PasswordRecovery />} />
+  //     </>
+  //   )
+  // )
 
   return (
     <AppContext.Provider value={initialState}>
-      <Layout>
-        <RouterProvider router={router} />
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/password-recovery' element={<PasswordRecovery />} />
+          </Routes>
+        
+          {/* <RouterProvider router={router} /> */}
 
-      </Layout>
+        </Layout>
+      </BrowserRouter>
     </AppContext.Provider>
   )
 }

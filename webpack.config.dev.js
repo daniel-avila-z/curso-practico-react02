@@ -101,7 +101,9 @@ module.exports = {
     ]
   },
   devServer: {
-    historyApiFallback: true,
+    historyApiFallback: {
+      rewrites: [{ from: /\//, to: '/404.html' }],
+    },
     static: {
       directory: path.join(__dirname, 'public')
     },

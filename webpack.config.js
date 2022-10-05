@@ -8,13 +8,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 // const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js', // El archivo fuente que se va ir a produccion
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: 'index.js',
-    publicPath: './',
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
+    publicPath: "./",
     clean: true
-  },
+  }, 
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
