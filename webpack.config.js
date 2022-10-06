@@ -11,8 +11,8 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-    publicPath: "./",
+    filename: "curso-practico-react02/bundle.js",
+    publicPath: "/curso-practico-react02/",
     clean: true
   }, 
   resolve: {
