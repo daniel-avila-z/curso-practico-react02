@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 0 24px;
-  border-bottom: 1px solid var(--very-light-pink);
+  border-bottom: 1px solid var(--white);
   position: sticky;
   top: 0;
   // background-color: white;
@@ -26,14 +26,19 @@ nav {
 }
 .navbar-left {
   display: flex;
+  width: 60%;
 }
 .navbar-left ul {
+  width: 100%;
+  display: flex;
   margin-left: 12px;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .navbar-left ul li a,
 .navbar-right ul li a {
   text-decoration: none;
-  color: var(--very-light-pink);
+  color: var(--white);
   border: 1px solid var(--white);
   padding: 8px;
   border-radius: 8px;

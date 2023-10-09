@@ -13,14 +13,14 @@ const ProductItem = ({ product }) => {
 		<div className="ProductItem">
 			<img src={product.images[0]} alt={product.title} />
 			<div className="product-info">
-				<div>
-					<p>${product.price}</p>
-					<p>{product.title}</p>
+				<div className='product-info-container'>
+					<p>{product.title}</p>	
 				</div>
 				<figure onClick={()=>  handleClick(product)}>
 					<img src={addToCartImage} alt="" />
-				</figure>
+				</figure>	
 			</div>
+			<p className='product-price'>${product.price}</p>
 		</div>
 	);
 }
